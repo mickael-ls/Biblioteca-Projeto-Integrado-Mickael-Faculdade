@@ -1,0 +1,224 @@
+/* Configurações gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Títulos */
+h1 {
+    color: #203864;
+    border-bottom: 3px solid #2f5597;
+    padding-bottom: 12px;
+}
+
+h2 {
+    color: #2f5597;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #203864;
+}
+
+/* Links */
+a {
+    color: #2f5597;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulários */
+form {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 450px;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2f5597;
+}
+
+/* Botões */
+button {
+    background-color: #2f5597;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #203864;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #203864;
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f5fa;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Mensagens */
+p[style*="color: green"] {
+    background-color: #e4f5e9;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+p[style*="color: red"] {
+    background-color: #fde8e8;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* Menu do painel */
+ul {
+    background-color: white;
+    padding: 25px 45px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+li {
+    margin: 15px 0;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 700px) {
+    body {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* Cabeçalho */
+.topo {
+    background-color: #203864;
+    padding: 18px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.topo-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.topo nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.topo nav a {
+    color: white;
+    font-weight: normal;
+}
+
+.topo nav a:hover {
+    color: #cbdaf5;
+}
+
+/* Área principal */
+.container {
+    min-height: 65vh;
+}
+
+/* Rodapé */
+.rodape {
+    margin-top: 45px;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .topo-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topo nav {
+        gap: 12px;
+    }
+}
